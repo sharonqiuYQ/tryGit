@@ -1,0 +1,21 @@
+#设置默认行为，即使用户没有设置core.autocrlf  
+* text=crlf  
+  
+#显示声明为text文件，以便总是在检出时规范化转成本地换行设置  
+*.c text  
+*.h text 
+*.RPGLE text
+*.RPG text 
+  
+#声明文件总是在检出时以CRLF换行  
+*.sln text eol=crlf  
+
+*.java text eol=lf
+  
+# Denote all files that are truly binary and should not be modified.  
+#声明文件是二进制文件，不必要进行换行转换  
+*.png binary  
+*.jpg binary
+
+# Do checking
+core.safecrlf=true
